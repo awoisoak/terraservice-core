@@ -16,7 +16,7 @@ module "vpc" {
   source = "terraform-google-modules/network/google//modules/vpc"
   version = "6.0.0"
   project_id = var.project_id
-  network_name = var.network_name
+  network_name = "tokyo-vpc"
   shared_vpc_host = false
   depends_on = [
     google_project_service.app_services
