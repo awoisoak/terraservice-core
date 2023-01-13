@@ -9,7 +9,7 @@ variable "region" {
 }
 
 variable "api_service_list" {
-  type        = list()
+  type        = list(string)
   description = "List of Service APIs"
 }
 
