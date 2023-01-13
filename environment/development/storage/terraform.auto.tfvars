@@ -5,3 +5,4 @@ force_destroy               = yes
 location                    = "us-west1"
 uniform_bucket_level_access = yes
 enabled                     = yes
+zone                        = "us-west1-a"

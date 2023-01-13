@@ -6,3 +6,4 @@ api_service_list = [
   "storage.googleapis.com"           // Bucket
 ]
 repository_id = "terraservice-repo"
+zone          = "us-west1-a"
