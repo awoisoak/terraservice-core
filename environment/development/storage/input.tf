@@ -18,6 +18,11 @@ variable "region" {
   description = "Bucket region"
 }
 
+variable "zone" {
+  type        = string
+  description = "Zone"
+}
+
 variable "uniform_bucket_level_access" {
   type        = bool
   description = "To Avoid using ACL and handle permissions exclusively through IAM"
@@ -26,4 +31,10 @@ variable "uniform_bucket_level_access" {
 variable "versioning" {
   type        = bool
   description = "Enable bucket versioning"
+}
+
+// Will be set via TFC
+variable "gcp_credentials" {
+  type        = string
+  description = "GCP credentials"
 }

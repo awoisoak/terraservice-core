@@ -8,6 +8,11 @@ variable "region" {
   description = "Region"
 }
 
+variable "zone" {
+  type        = string
+  description = "Zone"
+}
+
 variable "api_service_list" {
   type        = list(string)
   description = "List of Service APIs"
@@ -16,4 +21,10 @@ variable "api_service_list" {
 variable "repository_id" {
   type        = string
   description = "Repository Id"
+}
+
+// Will be set via TFC
+variable "gcp_credentials" {
+  type        = string
+  description = "GCP credentials"
 }
