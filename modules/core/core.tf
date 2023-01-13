@@ -13,4 +13,7 @@ resource "google_artifact_registry_repository" "docker-repo" {
   repository_id = var.repository_id
   description   = "Docker repository within Artifact Registry"
   format        = "DOCKER"
+  depends_on = [
+    google_project_service.app_services
+  ]
 }
