@@ -5,4 +5,4 @@ api_service_list = [
   "artifactregistry.googleapis.com", // Artifact Registry
   "storage.googleapis.com"           // Bucket
 ]
-repository_id = var.repository_id
+repository_id = "terraservice-repo"
