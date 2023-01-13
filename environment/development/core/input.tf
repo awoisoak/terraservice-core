@@ -25,6 +25,7 @@ variable "repository_id" {
 
 // Will be set via TFC
 variable "gcp_credentials" {
+  sensitive   = true
   type        = string
   description = "GCP credentials"
 }
