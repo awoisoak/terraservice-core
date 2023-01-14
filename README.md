@@ -1,13 +1,14 @@
 # Core
 Core Terraform (TF) module to test a terraservice approach using Terraform Cloud (TFC)
-Related repo https://github.com/awoisoak/terraservice-service1
 
 
-This Core repository handle TF files which expose outputs that will be consumes by other other repos using their own TF files.
-The idea is that the repositories with the actual app/service code implementation will hold as well TF files to setup their own infra. 
-Those [service repositories](https://github.com/awoisoak/terraservice-service1) will be able to retrieve the generic/common/core infra resources from the outputs of this Core repository.
 
-Workspaces setup in TFC with their respective run triggers:
+This Core repository contains the core IaC through Terraform files that will expose outputs that will be consumed by other repositories.
+
+The idea is that the repositories with the actual app/service code will hold as well their own Terraform files to setup their own infra. 
+Those [service repositories](https://github.com/awoisoak/terraservice-service1) will be able to retrieve the core resources of the infra from the outputs of this Core repository.
+
+This projects relies in TFC not just as a remote backend for the different Terraform states involved but to orchestrate the corresponding triggers of each TFC workspace:
 
 ```mermaid
 stateDiagram
@@ -27,7 +28,7 @@ stateDiagram
 
 
 Observations:
-- Current modules architecture (core/network/storage) are just an example.
+- Current module architecture (core/network/storage) is just an example.
 
 TODO:
 
