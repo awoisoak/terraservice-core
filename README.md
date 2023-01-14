@@ -1,4 +1,4 @@
-# Core
+# terraservice-core
 Core Terraform module to test a [terraservice](https://www.hashicorp.com/resources/evolving-infrastructure-terraform-opencredo) approach using Terraform Cloud (TFC)
 
 
