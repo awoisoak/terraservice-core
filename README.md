@@ -10,6 +10,9 @@ Those [service repositories](https://github.com/awoisoak/terraservice-service1) 
 
 This projects relies in TFC not just as a remote backend for the different Terraform states involved but to orchestrate the corresponding triggers of each TFC workspace:
 
+<img width="757" alt="Screenshot 2023-01-14 at 18 33 56" src="https://user-images.githubusercontent.com/11469990/212465573-96151a67-5cc6-4c71-b461-4e9d5746f45e.png">
+
+
 ```mermaid
 stateDiagram
     [*] --> terraservice_core_development_core
