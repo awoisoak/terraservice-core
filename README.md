@@ -1,10 +1,18 @@
-# core
-Core tf module to test terraservice approach using TFC
+# Core
+Core Terraform (TF) module to test a terraservice approach using Terraform Cloud (TFC)
 Related repo https://github.com/awoisoak/service1
 
 
-This repository handle the IaC files that are core of the projects.
-The idea is that other repositories that hold the app/service code will hold their specific IaC files but will retrieve a more generic/common/core infra resources from the outputs of this repository.
+This Core repository handle the IaC files that are core of the projects.
+The idea is that other repositories with the app/service code will hold as well their specific TF files. Those will be able to retrieve a more generic/common/core infra resources from the outputs of this Core repository.
+
+Workspaces setup in TFC:
+
+terraservice-core-development-core
+|
+|----> terraservice-core-development-network
+|----> terraservice-core-development-storage
+
 
 //TODO current modules architecture is just an example. Think about an architecture that might make more sense
 //TODO plan how to manage module versioning
