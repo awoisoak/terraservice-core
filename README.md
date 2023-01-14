@@ -1,20 +1,27 @@
 # Core
 Core Terraform (TF) module to test a terraservice approach using Terraform Cloud (TFC)
-Related repo https://github.com/awoisoak/service1
+Related repo https://github.com/awoisoak/terraservice-service1
 
 
-This Core repository handle the IaC files that are core of the projects.
-The idea is that other repositories with the app/service code will hold as well their specific TF files. Those will be able to retrieve a more generic/common/core infra resources from the outputs of this Core repository.
+This Core repository handle TF files which expose outputs that will be consumes by other other repos using their own TF files.
+The idea is that the repositories with the actual app/service code implementation will hold as well TF files to setup their own infra. 
+Those [service repositories](https://github.com/awoisoak/terraservice-service1) will be able to retrieve the generic/common/core infra resources from the outputs of this Core repository.
 
-Workspaces setup in TFC:
+Workspaces setup in TFC with their respective run triggers:
+
 
 terraservice-core-development-core
 |
-|----> terraservice-core-development-network
-|----> terraservice-core-development-storage
+|----> terraservice-core-development-network --|
+|----> terraservice-core-development-storage --|
+                                               |
+                                               |----> terraservice-service-1-development
 
+Observations:
 
-//TODO current modules architecture is just an example. Think about an architecture that might make more sense
+Current modules architecture (core/network/storage) are just an example.
+
+//TODO apply a more realistic module architecture
 //TODO plan how to manage module versioning
 //TODO probably only the tf project that consumes tfe_outputs requires to setup the tfe provider and token
 //TODO rename repo to 'terraformservice-base' to avoid confusion with 'core' module
