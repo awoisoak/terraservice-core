@@ -1,7 +1,5 @@
 # terraservice-core
-Core Terraform module to test a [terraservice](https://www.hashicorp.com/resources/evolving-infrastructure-terraform-opencredo) approach using Terraform Cloud (TFC)
-
-
+Core Terraform module to test a [Multirepo](https://www.hashicorp.com/blog/terraform-mono-repo-vs-multi-repo-the-great-debate) project with a [terraservice](https://www.hashicorp.com/resources/evolving-infrastructure-terraform-opencredo) approach using Terraform Cloud.
 
 This Core repository contains the core IaC through Terraform files that will expose outputs that will be consumed by other repositories.
 
