@@ -33,10 +33,4 @@ Observations:
 
 TODO:
 
-- Confirm whether the environemnt IaC files can create several resources from the modules by calling them twice (ex. we need to VPC so we called the network module twice). In that case we would need to set a second output for that vpc so that it could be consumed by other repos.
-
-
-- rename module core to base to avoid confusion with 'core' repo?
-
-
 - plan how to manage module versioning
