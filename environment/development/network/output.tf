@@ -5,5 +5,5 @@ output "vpc" {
 
 output "vpc2" {
   description = "VPC object"
-  value       = module.network2.vpc
+  value       = module.network_2.vpc
 }

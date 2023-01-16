@@ -6,7 +6,7 @@ module "network" {
 
 # Example of creating a second subnet by calling the module twice
 module "network_2" {
-  source     = "../../../modules/network"
-  project_id = var.project_id
-  network_name     = "osaka-vpc"
+  source       = "../../../modules/network"
+  project_id   = var.project_id
+  network_name = "osaka-vpc"
 }
